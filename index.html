@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马青云的简历</title>
+</head>
+
+<body>
+
+    <span id="word"></span>
+    <div id="div1wrapper">
+        <div id="div1"></div>
+    </div>
+    <style id="style"> </style>
+    <style>
+        #div1 {
+            top: 20px;
+            right: 20px;
+            position: fixed;
+            word-wrap: break-word;
+        }
+
+        @media(max-width:500px) {
+            #word {
+                height: 50vh;
+                overflow: auto;
+            }
+
+            #div1wrapper {
+                height: 50vh;
+            }
+
+            #div1 {
+                top: 0;
+                position: relative;
+                height: 200px;
+                width: 200px;
+                left: 50%;
+                transform: translate(-50%);
+            }
+
+            #div1::before {
+                height: 100px;
+                width: 100px;
+                position: fixed;
+            }
+
+            #div1::after {
+                height: 100px;
+                width: 100px;
+                position: fixed;
+            }
+
+        }
+    </style>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
