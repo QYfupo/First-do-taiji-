@@ -79,7 +79,7 @@ let steap = () => {
             steap()
         }
 
-    }, 10)
+    }, 50)
 
 }
 steap()
